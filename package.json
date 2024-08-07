@@ -1,0 +1,23 @@
+{
+  "name": "formulario",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.1.1",
+    "@capacitor/core": "^6.1.1",
+    "@capacitor/ios": "^6.1.1",
+    "vue": "^3.4.31"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.1.1",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "tailwindcss": "^3.4.7",
+    "vite": "^5.3.4"
+  }
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ficha de Recenseamento</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+  
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+
+  <form class="bg-white p-8  rounded-lg max-w-2xl w-full mx-auto">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-2xl font-bold justify-center">Ficha de Recenseamento</h2>
+    </div>
+
+    <table class="w-full border-collapse border border-gray-300 rounded-lg mb-4">
+      <tr>
+        <td class="border border-gray-300 p-2 font-bold">Nome Completo:</td>
+        <td colspan="2" class="border border-gray-300 p-2"><input type="text" class="w-full border-0 focus:outline-none" placeholder="Seu nome completo" /></td>
+      </tr>
+      <tr>
+        <td class="border border-gray-300 p-2 font-bold">Data de Nascimento:</td>
+        <td class="border border-gray-300 p-2"><input type="date" class="w-full border-0 focus:outline-none" /></td>
+        <td class="border border-gray-300 p-2">
+          <div class="flex items-center">
+            <span class="mr-2 font-bold">Idade:</span>
+            <input type="number" class="w-full border-0 focus:outline-none" placeholder="Idade" />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="border border-gray-300 p-2 font-bold">Sexo:</td>
+        <td colspan="2" class="border border-gray-300 p-2">
+          <div class="flex items-center">
+            <label class="flex items-center mr-4">
+              <input type="radio" name="sexo" value="F" class="mr-2" />
+              Feminino
+            </label>
+            <label class="flex items-center">
+              <input type="radio" name="sexo" value="M" class="mr-2" />
+              Masculino
+            </label>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="border border-gray-300 p-2 font-bold">Filho de Pai:</td>
+        <td colspan="2" class="border border-gray-300 p-2"><input type="text" class="w-full border-0 focus:outline-none" placeholder="Nome do pai" /></td>
+      </tr>
+      <tr>
+        <td class="border border-gray-300 p-2 font-bold">Nome de Mae:</td>
+        <td colspan="2" class="border border-gray-300 p-2"><input type="text" class="w-full border-0 focus:outline-none" placeholder="Nome da mãe" /></td>
+      </tr>
+      <tr>
+        <td class="border border-gray-300 p-2 font-bold">Estuda:</td>
+        <td colspan="2" class="border border-gray-300 p-2">
+          <div class="flex items-center">
+            <label class="flex items-center mr-4">
+              <input type="radio" name="estuda" value="sim" class="mr-2" />
+              Sim
+            </label>
+            <label class="flex items-center">
+              <input type="radio" name="estuda" value="nao" class="mr-2" />
+              Não
+            </label>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="border border-gray-300 p-2 font-bold">Escola:</td>
+        <td colspan="2" class="border border-gray-300 p-2"><input type="text" class="w-full border-0 focus:outline-none" placeholder="Nome da escola" /></td>
+      </tr>
+      <tr>
+        <td class="border border-gray-300 p-2 font-bold">Classe/Ano:</td>
+        <td class="border border-gray-300 p-2"><input type="text" class="w-full border-0 focus:outline-none" placeholder="Classe ou ano" /></td>
+        <td class="border border-gray-300 p-2"><input type="text" class="w-full border-0 focus:outline-none" placeholder="Curso" /></td>
+      </tr>
+      <tr>
+        <td class="border border-gray-300 p-2 font-bold">Residência:</td>
+        <td colspan="2" class="border border-gray-300 p-2"><input type="text" class="w-full border-0 focus:outline-none" placeholder="Residência" /></td>
+      </tr>
+      <tr>
+        <td class="border border-gray-300 p-2 font-bold">Bairro:</td>
+        <td class="border border-gray-300 p-2"><input type="text" class="w-full border-0 focus:outline-none" placeholder="Bairro" /></td>
+        <td class="border border-gray-300 p-2"><input type="text" class="w-full border-0 focus:outline-none" placeholder="Número da casa" /></td>
+      </tr>
+      <tr>
+        <td class="border border-gray-300 p-2 font-bold">Quarteirão nº:</td>
+        <td class="border border-gray-300 p-2"><input type="text" class="w-full border-0 focus:outline-none" placeholder="Número do quarteirão" /></td>
+        <td class="border border-gray-300 p-2"><input type="text" class="w-full border-0 focus:outline-none" placeholder="Rua" /></td>
+      </tr>
+      <tr>
+        <td class="border border-gray-300 p-2 font-bold">Contacto pessoal:</td>
+        <td colspan="2" class="border border-gray-300 p-2"><input type="tel" class="w-full border-0 focus:outline-none" placeholder="Contacto pessoal" /></td>
+      </tr>
+      <tr>
+        <td class="border border-gray-300 p-2 font-bold">Frequenta a Catequese:</td>
+        <td colspan="2" class="border border-gray-300 p-2">
+          <div class="flex items-center">
+            <label class="flex items-center mr-4">
+              <input type="radio" name="catequese" value="sim" class="mr-2" />
+              Sim
+            </label>
+            <label class="flex items-center">
+              <input type="radio" name="catequese" value="nao" class="mr-2" />
+              Não
+            </label>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="border border-gray-300 p-2 font-bold">Fase/Ano:</td>
+        <td colspan="2" class="border border-gray-300 p-2"><input type="text" class="w-full border-0 focus:outline-none" placeholder="Fase ou ano" /></td>
+      </tr>
+      <tr>
+        <td class="border border-gray-300 p-2 font-bold">É Batptizado:</td>
+        <td colspan="2" class="border border-gray-300 p-2">
+          <div class="flex items-center">
+            <label class="flex items-center mr-4">
+              <input type="radio" name="batizado" value="sim" class="mr-2" />
+              Sim
+            </label>
+            <label class="flex items-center">
+              <input type="radio" name="batizado" value="nao" class="mr-2" />
+              Não
+            </label>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="border border-gray-300 p-2 font-bold">É Crismado:</td>
+        <td colspan="2" class="border border-gray-300 p-2">
+          <div class="flex items-center">
+            <label class="flex items-center mr-4">
+              <input type="radio" name="crismado" value="sim" class="mr-2" />
+              Sim
+            </label>
+            <label class="flex items-center">
+              <input type="radio" name="crismado" value="nao" class="mr-2" />
+              Não
+            </label>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="border border-gray-300 p-2 font-bold">Nome do Encarregado de Educação:</td>
+        <td colspan="2" class="border border-gray-300 p-2"><input type="text" class="w-full border-0 focus:outline-none" placeholder="Nome do encarregado" /></td>
+      </tr>
+      <tr>
+        <td class="border border-gray-300 p-2 font-bold">Contacto do Encarregado:</td>
+        <td colspan="2" class="border border-gray-300 p-2"><input type="tel" class="w-full border-0 focus:outline-none" placeholder="Contacto do encarregado" /></td>
+      </tr>
+    </table>
+
+    <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded-md hover:bg-blue-700 transition font-medium">
+      Enviar
+    </button>
+  </form>
+
+</body>
+</html>
